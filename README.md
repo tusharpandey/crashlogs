@@ -8,11 +8,13 @@ compile 'com.crashlogs:crashlogs:1.1'
 
 How to start implementing it.
 
-
+```
   MainActivity1 extends CustomExceptionActivity
+```
 
 
-  @Override
+```
+@Override
   protected void onCreate(Bundle savedInstanceState) {
 
         email = "tushar.2april@gmail.com";
@@ -25,4 +27,5 @@ How to start implementing it.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
   }
+```  
         
