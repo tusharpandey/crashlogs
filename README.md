@@ -2,9 +2,9 @@
 
 Gradle Dependency  for adding CrashLogs in app.
 
+```
 compile 'com.crashlogs:crashlogs:1.1'
-
-=============================================================
+```
 
 How to start implementing it.
 
