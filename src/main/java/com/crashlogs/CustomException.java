@@ -1,8 +1,6 @@
 package com.crashlogs;
 
 import android.app.Activity;
-import android.content.Context;
-import android.os.Bundle;
 
 /**
  * Created by kiwitech on 13/9/16.
