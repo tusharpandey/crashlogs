@@ -7,7 +7,7 @@ import android.app.Activity;
  */
 public class CustomException {
 
-    public static void initialize(Activity activity, EmailOptions emailOptions, String email) {
+    public static void initializeWithData(Activity activity, EmailOptions emailOptions, String email) {
         if(!(Thread.getDefaultUncaughtExceptionHandler() instanceof CustomExceptionHandler)) {
 
             if( emailOptions == null ){
@@ -23,5 +23,12 @@ public class CustomException {
             Thread.setDefaultUncaughtExceptionHandler(new CustomExceptionHandler(emailOptions));
         }
     }
+
+    public static void initialize(EmailOptions emailOptions) {
+        if(!(Thread.getDefaultUncaughtExceptionHandler() instanceof CustomExceptionHandler)) {
+            Thread.setDefaultUncaughtExceptionHandler(new CustomExceptionHandler(emailOptions));
+        }
+    }
+
 
 }
