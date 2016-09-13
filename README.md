@@ -8,6 +8,15 @@ In your base activity add this code in onCreate().
         CustomException.initialize(this,null,email);
 ```
 
+In this you can also pass, Your Custom Email Option to use Emial subjects as custom.
 
+
+```
+                EmailOptions emailOptionsTemp = new EmailOptions.Builder()
+                        .setEmail(email)
+                        .setActivity(activity)
+                        .showShortEmailTitle()
+                        .build();
+```
 
 
